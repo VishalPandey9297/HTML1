@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Contact Details</title>
+</head>
+<body>
+    <h3><strong>Social Accounts :</strong></h3>
+    <h4><a href="https://twitter.com/Vishalpandey987">🚀Twitter Handle🚀</a></h4>
+    <h4><a href="https://www.linkedin.com/in/quintessentiallyvishal/">📧LinkedIn Profile📧</a></h4>
+    <hr noshade="" size="3">
+    <!--Below Section encodes a Form that user can use to enter details for contact section-->
+<!--    <form class="" action="index.html" method="POST"> -->
+    <!--action attribute can be assigned with another HTML document or it can be used as below
+    as below one should remove class attribute and give enctype (Encoding Type as text/plain so 
+    that webpage data is correctly encoded while sent through a mail) ALso in case of 
+mailto being used all form elements must be provided with a value for name attribute-->
+        <form action="mailto:info@letsEnhanceLife.com" method="post" enctype="text/plain">
+        <table cellspacing="7">
+            <tr>
+                <td>
+                    <label for="">Your Name :</label>
+                </td>
+                <td><input type="text" name="yourName" value=""></td>
+            </tr>
+            <tr>
+                <td><label for="">Email :</label></td>
+                <td><input type="email" name="yourEmail" id=""><br></td>
+            </tr>
+            <tr>
+                <td><label for="">Mobile Number :</label></td>
+                <td><input type="password" name="mobileNumber"><br></td>
+            </tr>
+            <tr>
+                 <td><label for="">Date of Birth :</label></td>
+                 <td><input type="date" name="dob"><br></td>
+            </tr>
+            <tr>
+                 <td><label for="">Gender :</label></td>
+                 <td>
+                     <label for="">Male</label> <input type="radio" name="male">
+                    <label for="">Female</label> <input type="radio"name="female">    
+                 </td>
+            </tr>
+            <tr>
+                    <td><label for="">Resume Upload :</label></td>
+                    <td>
+                        <label for=""><em> Pick File from System </em></label> 
+                        <input type="file" name="resume">  
+                    </td>
+            </tr>
+            <tr>
+                    <td><label for="">Work Experience Range (Years):</label></td>
+                    <td>
+                        <input type="range" name="workEx">  
+                    </td>
+            </tr>
+        </table>
+        <br>
+        <label for="">I am not a 🤖 <em>(Please select a color.)</em></label>
+        <input type="color" name="idVerify" id=""><br>
+        <br>
+        <label for=""><em> <strong>I have read the terms and conditions.</strong></em></label><br>
+        <label for="">Yes</label>
+        <input type="checkbox" name="termsY" id="">
+        <label for="">No</label>
+        <input type="checkbox" name="termsN" id=""><br>
+        <label for="">Your Feedback ✒<em>(Optional)</em></label><br>
+        <textarea name="feedBack" id="" cols="20" rows="5"></textarea><br><br>
+        <input type="submit">
+        <hr>
+    </form>
+</body>
+</html>
